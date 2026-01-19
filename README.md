@@ -9,4 +9,4 @@ Demo iOS | Demo Android
 <img width="750"  alt="platform_view" src="https://github.com/user-attachments/assets/69d18414-1d30-4851-8498-5284d7f35d76" />
 
 # Restrições de Navegação
-Como o módulo nativo é renderizado dentro de uma área limitada (PlatformView) que está contida em uma BottomSheet do Flutter. Quando você usa startActivity() (Android) ou pushViewController() (iOS), você está tentando navegar para fora desse contexto limitado, ao invés disso toda a navegação deve ocorrer dentro do `View`.
+Como o módulo nativo é renderizado dentro de uma área limitada (PlatformView) que está contida em uma BottomSheet do Flutter toda a navegação deve ocorrer dentro do `View` pois quando você usa startActivity() (Android) ou pushViewController() (iOS), você está tentando navegar para fora desse contexto limitado.
